@@ -32,7 +32,7 @@ import Home from './container/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <YoutubeComp />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
