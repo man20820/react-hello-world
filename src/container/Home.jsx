@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import YoutubeComp from '../component/YoutubeComp/YoutubeComp';
+import LifeCycleComp from './LifeCycleComp/LifeCycleComp';
 import Product from './Product/Product';
 
 class Home extends Component {
@@ -29,8 +30,10 @@ class Home extends Component {
                     desc="deskripsi empat"
                 />
                 <YoutubeComp /> */}
-                <p>Counter</p>
-                <Product />
+                {/* <p>Counter</p>
+                <Product /> */}
+
+                <LifeCycleComp />
             </div >
         )
     }
