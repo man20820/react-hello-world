@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HelloComponent from './component/HelloComponent';
-import StatefullComponent from './container/StatefullComponent';
-import YoutubeComp from './component/YoutubeComp/YoutubeComp';
+// import HelloComponent from './component/HelloComponent';
+// import StatefullComponent from './container/StatefullComponent';
+// import YoutubeComp from './component/YoutubeComp/YoutubeComp';
 import Home from './container/Home';
 
 //coba1

@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
-import YoutubeComp from '../component/YoutubeComp/YoutubeComp';
+//import YoutubeComp from '../component/YoutubeComp/YoutubeComp';
 import LifeCycleComp from './LifeCycleComp/LifeCycleComp';
-import Product from './Product/Product';
+//import Product from './Product/Product';
 
 class Home extends Component {
+    state = {
+        showComponent: true,
+    }
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({
+                showComponent: true,
+            })
+        }, 15000)
+    }
     render() {
         return (
             <div>
@@ -33,7 +43,15 @@ class Home extends Component {
                 {/* <p>Counter</p>
                 <Product /> */}
 
-                <LifeCycleComp />
+
+                <br />
+                {
+                    this.state.showComponent
+                        ?
+                        <LifeCycleComp />
+                        : null
+                }
+                <br />
             </div >
         )
     }

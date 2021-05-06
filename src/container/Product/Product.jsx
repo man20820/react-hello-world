@@ -18,10 +18,10 @@ class Product extends Component {
             <Fragment>
                 <div className="header">
                     <div className="logo">
-                        <img src="https://lifestyle.abs-cbn.com/thumbnail.ashx?t=photos&w=300&h=200&p=2037/29495-10-17-19-bp.jpg" alt="" />
+                        <img src="https://lifestyle.abs-cbn.com/thumbnail.ashx?t=photos&w=300&h=200&p=2037/29495-10-17-19-bp.jpg" alt="nice" />
                     </div>
                     <div className="troley">
-                        <img src="https://lifestyle.abs-cbn.com/thumbnail.ashx?t=photos&w=300&h=200&p=2037/29495-10-17-19-bp.jpg" alt="" />
+                        <img src="https://lifestyle.abs-cbn.com/thumbnail.ashx?t=photos&w=300&h=200&p=2037/29495-10-17-19-bp.jpg" alt="nice" />
                         <div className="count">{this.state.order}</div>
                     </div>
                 </div>
