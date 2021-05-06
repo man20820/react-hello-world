@@ -15,9 +15,12 @@ class BlogPost extends Component {
         //             post: json
         //         }))
 
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('http://localhost:3001/posts')
             .then((res) => {
-                console.log(res);
+                console.log(res.data);
+                this.setState({
+                    post: res.data,
+                })
             })
     }
     render() {
@@ -26,7 +29,7 @@ class BlogPost extends Component {
                 <p className="section-title">BlogPost </p>
                 {
                     this.state.post.map(post => {
-                        return <Post key={post.id} title={post.title} desc={post.desc} />
+                        return <Post key={post.id} title={post.title} desc={post.body} />
 
                     })
                 }
